@@ -1,5 +1,7 @@
 echo "Install packages #1..."
 
+sudo apt-get update
+sudo apt-get install openssh-client
 sudo apt-get install htop curl tmux rsync rclone wget curl
 
 echo "Install packages #2..."
