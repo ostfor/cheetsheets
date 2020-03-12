@@ -1,13 +1,19 @@
-echo "Install system packages..."
+echo "Install packages #1..."
 
-sudo apt-get install htop curl tmux calibre
-sudo apt-get install fuse libfuse2 git python3-pip ack-grep -y
+sudo apt-get install htop curl tmux
 sudo apt-get install rsync rclone
-sudo apt-get install xautomation xdotool
 sudo apt install wget curl 
+
+echo "Install packages #2..."
+sudo apt-get install git python3 python3-pip ack-grep -y
 
 echo "Install pip packages..."
 sudo pip3 install virtualenv
+
+echo "Install packages #3..."
+sudo apt-get install fuse libfuse2
+sudo apt-get install xautomation xdotool
+
 
 # NeoVim
 
