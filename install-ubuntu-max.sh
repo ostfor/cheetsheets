@@ -4,7 +4,7 @@ bash ./install-ubuntu-min.sh
 
 echo "Install gui tools..."
 
-sudo apt-get install tilda
+sudo apt-get install tilda calibre
 
 # Snap pakages
 
