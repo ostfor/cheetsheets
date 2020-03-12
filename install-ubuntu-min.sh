@@ -1,8 +1,6 @@
 echo "Install packages #1..."
 
-sudo apt-get install htop curl tmux
-sudo apt-get install rsync rclone
-sudo apt install wget curl 
+sudo apt-get install htop curl tmux rsync rclone wget curl
 
 echo "Install packages #2..."
 sudo apt-get install git python3 python3-pip ack-grep -y
