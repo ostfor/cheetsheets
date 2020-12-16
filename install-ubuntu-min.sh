@@ -17,6 +17,8 @@ sudo apt-get install xautomation xdotool
 echo "Enable alt-shift"
 dconf write /org/gnome/desktop/input-sources/xkb-options "['grp:alt_shift_toggle']"
 
+echo "Create dev env"
+bash create_dev_env.sh
 # NeoVim
 
 # echo "Install NeoVim ..."
