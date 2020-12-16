@@ -8,7 +8,14 @@ sudo apt install -y tilda calibre
 sudo apt install -y telegram-desktop
 sudo apt install -y vlc sublime-merge sublime-text
 
-# Snap pakages
+# Mendeley
+echo ">> DL tools..." 
+MEND_LOC=/tmp/mendeleydesktop-latest.deb
+curl -L https://www.mendeley.com/repositories/ubuntu/stable/amd64/mendeleydesktop-latest --output ${MEND_LOC}
+sudo apt install -y ${MEND_LOC}
+
+## Snap pakages
+snap install netron --no-wait --classic;
 
 echo ">> Music..." 
 snap install spotify --no-wait --classic;
@@ -26,12 +33,10 @@ snap install todoist --no-wait --classic;
 
 echo ">> Dev tools..." 
 snap install pycharm-community --no-wait --classic; 
-wget https://www.mendeley.com/repositories/ubuntu/stable/amd64/mendeleydesktop-latest
 
-echo ">> DL tools..." 
-snap install netron --no-wait --classic;
 
 # Chrome
+snap install chromium --no-wait --classic; 
 
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb --output-document /tmp/google-chrome-stable_current_amd64.deb &&  sudo dpkg -i /tmp/google-chrome-stable_current_amd64.deb
+# wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb --output-document /tmp/google-chrome-stable_current_amd64.deb &&  sudo dpkg -i /tmp/google-chrome-stable_current_amd64.deb
 
