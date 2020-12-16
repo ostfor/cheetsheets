@@ -7,14 +7,17 @@ echo "Install gui tools..."
 sudo apt install -y tilda calibre
 sudo apt install -y telegram-desktop
 sudo apt install -y vlc sublime-merge sublime-text
+sudo apt install -y nautilus-dropbox
 
 # Mendeley
+
 echo ">> DL tools..." 
 MEND_LOC=/tmp/mendeleydesktop-latest.deb
 curl -L https://www.mendeley.com/repositories/ubuntu/stable/amd64/mendeleydesktop-latest --output ${MEND_LOC}
 sudo apt install -y ${MEND_LOC}
 
 ## Snap pakages
+
 snap install netron --no-wait --classic;
 
 echo ">> Music..." 
