@@ -4,16 +4,32 @@ bash ./install-ubuntu-min.sh
 
 echo "Install gui tools..."
 
-sudo apt-get install tilda calibre
+sudo apt install -y tilda calibre
+sudo apt install -y telegram-desktop
+sudo apt install -y vlc sublime-merge sublime-text
 
 # Snap pakages
 
-snap install telegram-desktop  gimp vlc
+echo ">> Music..." 
+snap install spotify --no-wait --classic;
 
-for p in pycharm-community sublime-text slack skype sublime-merge ; 
-do 
-  snap install $p --no-wait --classic; 
-done
+echo ">> Drawing..." 
+snap install gimp inkscape --no-wait --classic;
+
+echo ">> Meeting..." 
+snap install zoom-client --no-wait --classic; 
+snap install slack --no-wait --classic;
+snap install skype --no-wait --classic;
+
+echo ">> Task tracker..." 
+snap install todoist --no-wait --classic;
+
+echo ">> Dev tools..." 
+snap install pycharm-community --no-wait --classic; 
+wget https://www.mendeley.com/repositories/ubuntu/stable/amd64/mendeleydesktop-latest
+
+echo ">> DL tools..." 
+snap install netron --no-wait --classic;
 
 # Chrome
 
