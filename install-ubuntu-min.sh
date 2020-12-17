@@ -5,7 +5,8 @@ sudo apt-get install -y openssh-client
 sudo apt-get install -y htop curl tmux rsync rclone wget curl
 
 echo "Install packages #2..."
-sudo apt-get install -y git python3 python3-pip ack-grep -y
+sudo apt-get install -y git python3 python3-pip ack-grep 
+sudo apt install -y git-lfs
 
 echo "Install pip packages..."
 sudo pip3 install virtualenv
