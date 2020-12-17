@@ -5,7 +5,6 @@ bash ./install-ubuntu-min.sh
 echo "Install gui tools..."
 
 sudo apt install -y tilda calibre
-sudo apt install -y telegram-desktop
 sudo apt install -y vlc sublime-merge sublime-text
 sudo apt install -y nautilus-dropbox
 
@@ -27,6 +26,7 @@ echo ">> Drawing..."
 snap install gimp inkscape --no-wait --classic;
 
 echo ">> Meeting..." 
+snap install telegram-desktop --no-wait --classic;
 snap install zoom-client --no-wait --classic; 
 snap install slack --no-wait --classic;
 snap install skype --no-wait --classic;
