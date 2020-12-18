@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 echo "Install packages #1..."
 
 sudo apt-get update

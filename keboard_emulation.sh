@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 while :
 do
     N=$(( ( RANDOM % 60 )  + 5 ))

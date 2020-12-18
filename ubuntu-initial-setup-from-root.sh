@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 apt-get install sudo 
 adduser $1
 su $1

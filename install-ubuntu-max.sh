@@ -16,6 +16,7 @@ curl -L https://www.mendeley.com/repositories/ubuntu/stable/amd64/mendeleydeskto
 sudo apt install -y ${MEND_LOC}
 
 ## Snap pakages
+#!/usr/bin/env bash
 
 snap install netron --no-wait --classic;
 
@@ -48,4 +49,5 @@ echo "== Configure =="
 echo ">> Tilda"
 
 mkdir -p ${HOME}/.config/tilda
-cp -R ./config/tilda/* ${HOME}/.config/tilda/*
+cp -R ./config/tilda/* ${HOME}/.config/tilda/
+
