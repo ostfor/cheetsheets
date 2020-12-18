@@ -43,3 +43,9 @@ snap install chromium --no-wait --classic;
 
 # wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb --output-document /tmp/google-chrome-stable_current_amd64.deb &&  sudo dpkg -i /tmp/google-chrome-stable_current_amd64.deb
 
+echo "== Configure =="
+
+echo ">> Tilda"
+
+mkdir -p ${HOME}/.config/tilda
+cp -R ./config/tilda/* ${HOME}/.config/tilda/*
