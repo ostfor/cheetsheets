@@ -26,6 +26,9 @@ snap install spotify --no-wait --classic;
 echo ">> Drawing..." 
 snap install gimp inkscape --no-wait --classic;
 
+echo ">> Screen capture..." 
+snap install simplescreenrecorder --no-wait
+
 echo ">> Meeting..." 
 snap install telegram-desktop --no-wait --classic;
 snap install zoom-client --no-wait --classic; 
