@@ -38,6 +38,9 @@ snap install todoist --no-wait --classic;
 echo ">> Dev tools..." 
 snap install pycharm-community --no-wait --classic; 
 
+echo ">>>> Data version control..." 
+snap install dvc --no-wait --classic;
+
 
 # Chrome
 snap install chromium --no-wait --classic; 
