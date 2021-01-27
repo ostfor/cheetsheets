@@ -15,6 +15,14 @@ MEND_LOC=/tmp/mendeleydesktop-latest.deb
 curl -L https://www.mendeley.com/repositories/ubuntu/stable/amd64/mendeleydesktop-latest --output ${MEND_LOC}
 sudo apt install -y ${MEND_LOC}
 
+## Pakage managers
+
+# sudo apt install flatpak
+# sudo apt install gnome-software-plugin-flatpak
+
+# Adding repo
+# flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
 ## Snap pakages
 #!/usr/bin/env bash
 
