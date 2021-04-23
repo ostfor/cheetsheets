@@ -15,6 +15,12 @@ MEND_LOC=/tmp/mendeleydesktop-latest.deb
 curl -L https://www.mendeley.com/repositories/ubuntu/stable/amd64/mendeleydesktop-latest --output ${MEND_LOC}
 sudo apt install -y ${MEND_LOC}
 
+# Discord
+
+DISCORD_LOC=/tmp/discord-0.0.13.deb
+curl -L https://dl.discordapp.net/apps/linux/0.0.13/discord-0.0.13.deb --output ${DISCORD_LOC}
+sudo apt install -y ${DISCORD_LOC}
+
 ## Pakage managers
 
 # sudo apt install flatpak
