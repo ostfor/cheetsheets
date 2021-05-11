@@ -71,3 +71,10 @@ echo ">> Tilda"
 mkdir -p ${HOME}/.config/tilda
 cp -R ./config/tilda/* ${HOME}/.config/tilda/
 
+# Upwork 
+
+# Upwork 
+
+Upwork=/tmp/upwork.deb
+curl -L https://upwork-usw2-desktopapp.upwork.com/binaries/v5_5_0_11_61df9c99b6df4e7b/upwork_5.5.0.11_amd64.deb --output ${Upwork}
+sudo apt install -y ${Upwork}
