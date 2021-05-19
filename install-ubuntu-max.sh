@@ -7,6 +7,7 @@ echo "Install gui tools..."
 sudo apt install -y tilda calibre
 sudo apt install -y vlc sublime-merge sublime-text
 sudo apt install -y nautilus-dropbox
+sudo apt install -y zeal
 
 # Mendeley
 
