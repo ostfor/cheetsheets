@@ -72,7 +72,11 @@ echo ">> Tilda"
 mkdir -p ${HOME}/.config/tilda
 cp -R ./config/tilda/* ${HOME}/.config/tilda/
 
-# Upwork 
+# Notion
+
+wget https://notion.davidbailey.codes/notion-linux.list
+sudo mv notion-linux.list /etc/apt/sources.list.d/notion-linux.list
+sudo apt update && sudo apt install -y notion-desktop
 
 # Upwork 
 
